@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+:root{
+    --primary-color:#F5EFE7;
+    --secundary-color:#D8C4B6;
+    --third-color:#4F709C;  
+    --fourth-color:#213555;
+
+}
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+header{
+    background: url(../img/FONDO.png);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+header nav{
+    display: flex;
+    width: 100%; 
+    justify-content: space-around;
+    align-items: center;
+}
+header nav ul a{
+    font-size: 20px;    
+    text-decoration:none;
+    color: #F5EFE7;
+    margin: 0 14px;
+}
+header nav ul a:hover{
+    border-bottom: 2px solid #F5EFE7;
+}
+HEADER h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    justify-content: center;
+}
+.hero{
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+    margin: 0 10%;
+    margin-top: 300px;
+    color: var(--primary-color);
+}
+.hero h2{
+    font-size: 45px;
+}
+.hero h1{
+    font-size: 150px;
+    color: var(--secundary-color);
+    font-weight: 800;
+}
+.hero p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--secundary-color);
+    font-size: 30px;
+}
+.hero h2:nth-child(1){
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+@keyframes showContenido {
+    to{
+        transform: translateY(0);
+        filter: blur(0);
+        opacity: 1;
+    } 
+}
+.hero h2,
+.hero h1,
+.hero p:nth-child(3){
+    transform: translateY(30px);
+    filter: blur(20px);
+    opacity: 0;
+    animation: showContenido .5s .7s ease-in-out 1 forwards;
+}
