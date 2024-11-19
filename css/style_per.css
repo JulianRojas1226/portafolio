@@ -1,0 +1,116 @@
+/* fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,400;1,300;1,400;1,900&display=swap');
+/* variables */
+:root{
+    --primary-color:#F5EFE7;
+    --secundary-color:#D8C4B6;
+    --third-color:#4F709C;  
+    --fourth-color:#213555;
+    --font-title: 40px;
+    --font-parrafos:20px;
+}
+h1,h2,h3,h4,h5,h6{
+font-family: 'Montserrat',sans-serif;
+}
+p,a,li,td,input,label{
+    font-family: 'Work Sans',sans-serif;
+}
+body{
+    background: var(--fourth-color);
+}
+header{
+    padding-top: 40px;
+}
+nav.bg-gym{
+    background-color: var(--primary-color);
+}
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-gym ul li a{
+    color: var(--primary-color);
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.bg-gym ul li{
+    margin-top: 14px ;
+}
+nav.bg-gym ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-gym ul li a:hover{
+    color: var(--secundary-color);
+}
+nav.bg-gym ul li a:hover::after{
+    background: var(--secundary-color);
+    width: 40%;
+}
+nav.bg-gym ul li.login{
+    margin-left: 400px;
+    margin-right: 20px;
+}
+nav.bg-gym ul li.registro a{
+    display: block;
+    padding: 12px 30px !important;
+    color: #ffff;
+    background: #2c5bff;
+    border-radius: 4px;
+    
+}
+/* hero */
+#hero{
+    padding: 140px 0;
+}
+#hero .cont-foto {
+position: relative;
+width: 400px;
+}
+#hero .cont-foto img{
+    z-index: 2;
+    position: relative;
+    width: 400px;
+}
+#hero .cont-foto::before{
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top:-40px;
+    left: 40px;
+    background: var(--third-color);
+}
+#hero .cont-info{
+    padding-left: 60px;
+
+}
+#hero .cont-info h1{
+    color: #ffff;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+#hero .cont-info h1 span{
+    border-bottom: 12px solid #ffff;
+}
+#hero .cont-info p{
+    color: #ffff;
+    font-size: var(--font-parrafos);
+    margin-bottom: 60px;
+
+}
+#hero .cont-info .destacados h2{
+    color: #ffff;
+    font-size: var(--font-title);
+}
+#hero .cont-info .destacados p{
+    font-size: 14px;
+}
