@@ -22,22 +22,22 @@ body{
 header{
     padding-top: 40px;
 }
-nav.bg-gym{
-    background-color: var(--primary-color);
+nav.bg-perfil{
+    background-color: var(--fourth-color);
 }
 nav .navbar-brand img{
     width: 200px;
 }
-nav.bg-gym ul li a{
+nav.bg-perfil ul li a{
     color: var(--primary-color);
     position: relative;
     font-size: 20px;
     margin: 0 12px;
 }
-nav.bg-gym ul li{
+nav.bg-perfil ul li{
     margin-top: 14px ;
 }
-nav.bg-gym ul li a::after{
+nav.bg-perfil ul li a::after{
     width: 0;
     height: 2px;
     background: transparent;

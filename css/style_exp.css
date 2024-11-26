@@ -14,23 +14,51 @@
     padding: 0;
     box-sizing: content-box;
 }
-
-header nav{
-    z-index: 100;
-    position: fixed;
-    display: flex;
-    width: 100%; 
-    justify-content: space-around;
-    align-items: center;
+nav.bg-perfil{
+    
+    z-index: 900;
+    background-color: transparent;
 }
-header nav ul a{
-    font-size: 20px;    
-    text-decoration:none;
-    color: #F5EFE7;
-    margin: 0 14px;
+nav .navbar-brand img{
+    width: 200px;
 }
-header nav ul a:hover{
-    border-bottom: 2px solid #F5EFE7;
+nav.bg-perfil ul li a{
+    color: var(--fourth-color   );
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.bg-perfil ul li{
+    margin-top: 14px ;
+}
+nav.bg-perfil ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-perfil ul li a:hover{
+    color: var(--secundary-color);
+}
+nav.bg-perfil ul li a:hover::after{
+    background: transparent;
+    width: 40%;
+}
+nav.bg-perfil ul li.login{
+    margin-left: 400px;
+    margin-right: 20px;
+}
+nav.bg-perfil ul li.registro a{
+    display: block;
+    padding: 12px 30px !important;
+    color: #ffff;
+    background: transparent;
+    border-radius: 4px;
+    
 }
 /* experiencia */
 .slider{
@@ -163,8 +191,16 @@ header nav ul a:hover{
     inset:  auto 10px 10px 10px;
 }
 @media screen and (max-width: 678px) {
+    .sliderbar{
+        height: 100%;
+    }
     .miniatura{
+        bottom: 100;
         justify-content: start;
+        
+    }
+    .miniatura .item{
+        width: 65px;
     }
     .slider .list .item .contenido h2{
         font-size: 60px;

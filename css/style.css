@@ -14,6 +14,50 @@
     padding: 0;
     box-sizing: content-box;
 }
+nav.bg-perfil{
+    background-color: transparent;
+}
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-perfil ul li a{
+    color: var(--primary-color);
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.bg-perfil ul li{
+    margin-top: 14px ;
+}
+nav.bg-perfil ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-gym ul li a:hover{
+    color: var(--secundary-color);
+}
+nav.bg-gym ul li a:hover::after{
+    background: transparent;
+    width: 40%;
+}
+nav.bg-gym ul li.login{
+    margin-left: 400px;
+    margin-right: 20px;
+}
+nav.bg-gym ul li.registro a{
+    display: block;
+    padding: 12px 30px !important;
+    color: #ffff;
+    background: transparent;
+    border-radius: 4px;
+    
+}
 header{
     background: url(../img/FONDO.png);
     width: 100%;

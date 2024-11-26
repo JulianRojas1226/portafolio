@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+:root{
+    --primary-color:#F5EFE7;
+    --secundary-color:#D8C4B6;
+    --third-color:#4F709C;  
+    --fourth-color:#213555;
+
+}
+header{
+    padding-top: 40px;
+}
+nav.bg-perfil{
+    
+    z-index: 900;
+    background-color: transparent;
+}
+nav .navbar-brand img{
+    width: 200px;
+}
+nav.bg-perfil ul li a{
+    color: var(--primary-color);
+    position: relative;
+    font-size: 20px;
+    margin: 0 12px;
+}
+nav.bg-perfil ul li{
+    margin-top: 14px ;
+}
+nav.bg-perfil ul li a::after{
+    width: 0;
+    height: 2px;
+    background: transparent;
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    transition: .4s;
+}
+nav.bg-perfil ul li a:hover{
+    color: var(--secundary-color);
+}
+nav.bg-perfil ul li a:hover::after{
+    background: transparent;
+    width: 40%;
+}
+nav.bg-perfil ul li.login{
+    margin-left: 400px;
+    margin-right: 20px;
+}
+nav.bg-perfil ul li.registro a{
+    display: block;
+    padding: 12px 30px !important;
+    color: #ffff;
+    background: transparent;
+    border-radius: 4px;
+    
+}
+body{
+    background: var(--fourth-color);
+}
+
+/* servicios */
+#servicios{
+    width: 100%;
+    position: relative;
+    padding: 40px 0 100px;
+    text-align: center;
+}
+#servicios h2{
+    color: #ffff;
+    font-size: var(--font-title);
+    font-weight: 700;
+
+}
+#servicios p{
+    color: #fff;
+    font-size: var(--font-parrafos);
+}
+#servicios .row{
+padding-top: 70px;
+}
+#servicios .card-services{
+    background: #292c36;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 70px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    text-align: left;
+    transition: .4s;
+    max-width: 280px;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+#servicios .card-services:hover{
+    background: #2c5bff;
+}
+#servicios .card-services img{
+    background: #fff;
+    width: 70px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -20px;
+    left: 30px;
+}
+#servicios .card-services h3{
+    text-align: right;
+    color: #fff;
+    font-size: var(--font-title);
+    margin-bottom: 20px;
+}
+#servicios .card-services h4{
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: left;
+    margin-bottom: 15px;
+}
+#servicios .card-services p{
+    font-size: 15px;
+    color: #fff;
+    text-align: left;
+    line-height: 30px;
+    margin-left: 15px;
+}
+#servicios .card-services a{
+    color: #fff;
+    text-align: left;
+    display: inline-block;
+    font-size: 15px;
+    text-decoration: none;
+    border-bottom: 2px solid;
+}
