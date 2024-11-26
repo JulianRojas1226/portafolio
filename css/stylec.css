@@ -1,13 +1,21 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root{
     --primary-color:#F5EFE7;
     --secundary-color:#D8C4B6;
     --third-color:#4F709C;  
     --fourth-color:#213555;
 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+}
+p,a,li,td,input,label{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+        color: var(--primary-color);
 }
 
 *{
@@ -20,13 +28,17 @@ body{
     background: #213555;
 }
 nav.bg-perfil{
+    position: fixed;
+    z-index: 900;
     background-color: transparent;
+    margin-bottom: 30px;
 }
 nav .navbar-brand img{
     width: 200px;
 }
 nav.bg-perfil ul li a{
-    color: var(--fourth-color);
+    font-family: "Comfortaa", sans-serif;
+    color: var(--primary-color);
     position: relative;
     font-size: 20px;
     margin: 0 12px;
@@ -65,12 +77,12 @@ nav.bg-perfil ul li.registro a{
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Montserrat',sans-serif;
+    font-family: "Poppins", sans-serif;
     color: var(--primary-color);
 }
 p,a,li,td,input,label{
-        font-family: 'Work Sans',sans-serif;
-        color: var(--secundary-color);
+    font-family: "Edu VIC WA NT Beginner", cursive;
+        color: var(--primary-color);
 }
 #DESTINOS{
     background: var(--fourth-color);
@@ -79,10 +91,10 @@ p,a,li,td,input,label{
 
 }
 #DESTINOS h1{
-    margin-top: 30px;
     text-align: left;
     padding: 50px;
     font-size: 100px;
+    color: var(--primary-color);
 
 }
 #DESTINOS p{

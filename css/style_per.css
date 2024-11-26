@@ -19,9 +19,6 @@ p,a,li,td,input,label{
 body{
     background: var(--fourth-color);
 }
-header{
-    padding-top: 40px;
-}
 nav.bg-perfil{
     background-color: var(--fourth-color);
 }
@@ -29,13 +26,14 @@ nav .navbar-brand img{
     width: 200px;
 }
 nav.bg-perfil ul li a{
+    font-family: "Comfortaa", sans-serif;
     color: var(--primary-color);
     position: relative;
     font-size: 20px;
     margin: 0 12px;
 }
 nav.bg-perfil ul li{
-    margin-top: 14px ;
+    margin-top: 14px;
 }
 nav.bg-perfil ul li a::after{
     width: 0;
@@ -47,24 +45,72 @@ nav.bg-perfil ul li a::after{
     left: 10px;
     transition: .4s;
 }
-nav.bg-gym ul li a:hover{
+nav.bg-perfil ul li a:hover{
     color: var(--secundary-color);
 }
-nav.bg-gym ul li a:hover::after{
+nav.bg-perfil ul li a:hover::after{
     background: var(--secundary-color);
     width: 40%;
 }
-nav.bg-gym ul li.login{
+nav.bg-perfil ul li.login{
     margin-left: 400px;
     margin-right: 20px;
 }
-nav.bg-gym ul li.registro a{
+nav.bg-perfil ul li.registro a{
     display: block;
     padding: 12px 30px !important;
     color: #ffff;
     background: #2c5bff;
     border-radius: 4px;
-    
+}
+claro{
+    background-color: var(--primary-color);
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider-modo{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    border-radius: 34px;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+.slider-modo::before{
+    position: absolute;
+    content: '';
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    border-radius: 50%;
+    background: var(--third-color);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+input:checked+.slider-modo{
+    background: var(--fourth-color);
+}
+input:focus+.slider-modo{
+    box-shadow: 0 0 1px var(--secundary-color);
+}
+input:checked+.slider-modo::before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px );
 }
 /* hero */
 #hero{
@@ -89,6 +135,7 @@ width: 400px;
     left: 40px;
     background: var(--third-color);
 }
+i
 #hero .cont-info{
     padding-left: 60px;
 
@@ -105,9 +152,9 @@ width: 400px;
     color: #ffff;
     font-size: var(--font-parrafos);
     margin-bottom: 60px;
-
+    justify-content: center;
 }
-#hero .cont-info .destacados h2{
+#hero .cont-info .destacados a i{
     color: #ffff;
     font-size: var(--font-title);
 }

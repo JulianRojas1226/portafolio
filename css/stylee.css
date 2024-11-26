@@ -1,12 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;1,200;1,300;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 :root{
     --primary-color:#F5EFE7;
     --secundary-color:#D8C4B6;
     --third-color:#4F709C;  
     --fourth-color:#213555;
 
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Poppins", sans-serif;
+    color: var(--primary-color);
+}
+p,a,li,td,input,label{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+        color: var(--primary-color);
 }
 header{
     padding-top: 40px;
@@ -20,6 +29,7 @@ nav .navbar-brand img{
     width: 200px;
 }
 nav.bg-perfil ul li a{
+    font-family: "Comfortaa", sans-serif;
     color: var(--primary-color);
     position: relative;
     font-size: 20px;
@@ -96,16 +106,17 @@ padding-top: 70px;
     margin-bottom: 60px;
 }
 #servicios .card-services:hover{
-    background: #2c5bff;
+    background: var(--third-color);
 }
-#servicios .card-services img{
+#servicios .card-services i{
     background: #fff;
-    width: 70px;
+    font-size: 20px;
     padding: 15px;
     border-radius: 4px;
     position: absolute;
     top: -20px;
     left: 30px;
+    color: var(--third-color);
 }
 #servicios .card-services h3{
     text-align: right;
