@@ -27,6 +27,7 @@ html{
 nav.bg-perfil{
     z-index: 9000;
     background-color: transparent;
+    position: fixed;
 }
 nav .navbar-brand img{
     width: 200px;
@@ -38,9 +39,9 @@ nav.bg-perfil ul li a{
     font-size: 20px;
     margin: 0 12px;
 }
-nav.bg-perfil ul li{
+/* nav.bg-perfil ul li{
     margin-top: 14px ;
-}
+} */
 nav.bg-perfil ul li a::after{
     width: 0;
     height: 2px;
@@ -70,6 +71,15 @@ nav.bg-perfil ul li.registro a{
     border-radius: 4px;
     
 }
+.menu{
+    border: none;
+    border: 2px solid var(--secundary-color);
+    background-color: var(--secundary-color);
+    border-radius: 5px;
+}
+.cont-menu{
+    border: none;
+}
 
 h1,h2,h3,h4,h5,h6{
 color: var(--primary-color);
@@ -80,7 +90,6 @@ p,a,li,td,input,label{
 
 
 .carrusel{
-    margin-top: -50px;
     height: 800px;
     overflow: hidden;
     position: relative;
