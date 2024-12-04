@@ -17,7 +17,9 @@ p,a,li,td,input,label{
     font-family: "Edu VIC WA NT Beginner", cursive;
         color: var(--primary-color);
 }
-
+button.menu{
+    background: var(--primary-color);
+}
 *{
     font-family: "Poppins", sans-serif;
     margin: 0;
@@ -26,6 +28,11 @@ p,a,li,td,input,label{
 }
 body{
     background: #213555;
+}
+.cont-menu{
+    background: var(--third-color);
+    height: 100%;
+    width: 100vh;
 }
 nav.bg-perfil{
     position: fixed;

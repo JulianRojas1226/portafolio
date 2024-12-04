@@ -13,6 +13,9 @@ h1,h2,h3,h4,h5,h6{
     font-family: "Poppins", sans-serif;
     color: var(--primary-color);
 }
+button.menu{
+    background: var(--primary-color);
+}
 p,a,li,td,input,label{
     font-family: "Edu VIC WA NT Beginner", cursive;
         color: var(--primary-color);
@@ -48,6 +51,11 @@ nav.bg-perfil ul li a::after{
     left: 10px;
     transition: .4s;
 }
+.cont-menu{
+    background: var(--third-color);
+    height: 100%;
+    width: 100vh;
+}
 nav.bg-perfil ul li a:hover{
     color: var(--secundary-color);
 }
@@ -68,7 +76,8 @@ nav.bg-perfil ul li.registro a{
     
 }
 body{
-    background: var(--fourth-color);
+    background: url(../img/Rectangle\ 12\ \(1\).png);
+    background-size: cover;
 }
 
 /* servicios */

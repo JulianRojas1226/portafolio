@@ -15,7 +15,10 @@ h1,h2,h3,h4,h5,h6{
 }
 p,a,li,td,input,label{
     font-family: "Edu VIC WA NT Beginner", cursive;
-        color: var(--primary-color);
+    color: var(--primary-color);
+}
+html{
+    height: 10000px !important;
 }
 *{
     font-family: "Poppins", sans-serif;
@@ -39,6 +42,10 @@ nav.bg-perfil ul li a{
 nav.bg-perfil ul li{
     margin-top: 14px ;
 }
+button.menu{
+    background: var(--primary-color);
+}
+
 nav.bg-perfil ul li a::after{
     width: 0;
     height: 2px;
@@ -138,12 +145,7 @@ HEADER h1{
     opacity: 0;
     animation: showContenido .5s .7s ease-in-out 1 forwards;
 }
-@media screen and (max-width:768px){
-    header{
-        width: 100%;
-        height: 100%;
-    }
-}
+
 @media screen and (max-width:412px){
     header{
         width: 100%;

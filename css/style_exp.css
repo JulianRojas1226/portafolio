@@ -30,6 +30,11 @@ nav.bg-perfil{
 nav .navbar-brand img{
     width: 200px;
 }
+.cont-menu{
+    background: var(--third-color);
+    height: 100%;
+    width: 100vh;
+}
 nav.bg-perfil ul li a{
     font-family: "Comfortaa", sans-serif;
     color: var(--primary-color);

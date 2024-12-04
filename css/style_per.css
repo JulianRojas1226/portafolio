@@ -25,6 +25,9 @@ nav.bg-perfil{
 nav .navbar-brand img{
     width: 200px;
 }
+button.menu{
+    background: var(--primary-color);
+}
 nav.bg-perfil ul li a{
     font-family: "Comfortaa", sans-serif;
     color: var(--primary-color);

@@ -19,15 +19,23 @@ p,a,li,td,input,label{
 }
 *{
     font-family: "Poppins", sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
 }
 html{
     background: var(--fourth-color);
 }
 nav.bg-perfil{
+    
     z-index: 9000;
     background-color: transparent;
     position: fixed;
+}
+.cont-menu{
+    background: var(--third-color);
+    height: 100%;
+    width: 100vh;
 }
 nav .navbar-brand img{
     width: 200px;
@@ -59,35 +67,18 @@ nav.bg-perfil ul li a:hover::after{
     background: transparent;
     width: 40%;
 }
-nav.bg-perfil ul li.login{
-    margin-left: 400px;
-    margin-right: 20px;
-}
-nav.bg-perfil ul li.registro a{
-    display: block;
-    padding: 12px 30px !important;
-    color: #ffff;
-    background: transparent;
-    border-radius: 4px;
-    
-}
-.menu{
-    border: none;
-    border: 2px solid var(--secundary-color);
-    background-color: var(--secundary-color);
-    border-radius: 5px;
-}
-.cont-menu{
-    border: none;
-}
 
 h1,h2,h3,h4,h5,h6{
 color: var(--primary-color);
+
 }
 p,a,li,td,input,label{
     color: var(--secundary-color);
+    font-size: 30px;
 }
-
+button.menu{
+    background: var(--primary-color);
+}
 
 .carrusel{
     height: 800px;
@@ -97,8 +88,8 @@ p,a,li,td,input,label{
 }
 .carrusel .list{
     position: absolute;
-    top: 0;
-    width: 1140px;
+    top: -20px;
+    width: 100%;
     max-width: 90%;
     left: 50%;
     transform: translateX(-50%);
@@ -127,7 +118,7 @@ p,a,li,td,input,label{
     position: absolute;
     top: 50%;
     transform:  translateY(-50%);
-    width: 408px;
+    width: 40%;
     opacity: 0;
     pointer-events: none;
 }
@@ -224,7 +215,7 @@ p,a,li,td,input,label{
 .carrusel .list .item:nth-child(2) .intro .seeMore{
     animation-delay: 1.3s;
 }
-next */
+
 .carrusel.next .list .item:nth-child(1){
     animation: positionitem2  0.5s ease-in-out 1 forwards;
 }
@@ -280,23 +271,12 @@ keyframes positionitem3{
         width: 90%;
     }
 }
-@media screen and (max-width: 767px){
-    .carrusel .list .item{
-        width: 100%;
-        font-size: 10px;
+@media screen and (max-width: 768px){
+    .carrusel h2{
+        font-size: 80px;
     }
-    .carrusel{
-        height: 600px;
-    }
-    .carrusel .list{
-        width: 100%;
-
-    }
-    .carrusel .list .intro{
-        width: 50%;
-    }
-    .carrusel .list .item img{
-        width: 40%;
+    .carrusel p{
+        font-size: 20px;
     }
 }   
 @media screen and (max-width: 648px){
@@ -305,5 +285,11 @@ keyframes positionitem3{
     }
     .carrusel .list .item .intro{
         width: 50%;
+    }
+    .carrusel h2{
+        font-size: 30px;
+    }
+    .carrusel p{
+        font-size: 15px;
     }   
 }   
